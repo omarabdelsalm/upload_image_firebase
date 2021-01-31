@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "13723827878",
+    "firebase_url": "https://allabeed-default-rtdb.firebaseio.com",
+    "project_id": "allabeed",
+    "storage_bucket": "allabeed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:13723827878:android:f9c615e22e4c59c9847e67",
+        "android_client_info": {
+          "package_name": "com.companyname.apptesty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "13723827878-tdujfi8ldu9r0mba535en5nlp2gd14p9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEgvQHzWw3CbYgnBzjaPODVIr3mM9OIUM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "13723827878-tdujfi8ldu9r0mba535en5nlp2gd14p9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

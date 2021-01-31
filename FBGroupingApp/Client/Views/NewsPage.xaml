@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" BackgroundColor="Black"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FBGroupingApp.Client.Views.NewsPage">
+   <ContentPage.Content>
+		<ListView BackgroundColor="Black" ItemsSource="{Binding NewsItem,Mode=TwoWay}" SeparatorVisibility="None"  HasUnevenRows="True"
+			IsGroupingEnabled="true">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+				<Grid HeightRequest="340"  ColumnDefinitions="0.1*, 9*">
+					<BoxView HorizontalOptions="StartAndExpand" HeightRequest="150" WidthRequest="1" BackgroundColor="White"/>
+					<StackLayout HorizontalOptions="FillAndExpand" Grid.Column="1">
+					 <Image  x:Name="imgFil" Aspect="AspectFill" HeightRequest="250" HorizontalOptions="FillAndExpand" Source="{Binding NewsImagePath}"/>
+                     <Label  x:Name="labFil" MaxLines="4" LineBreakMode="TailTruncation"  TextColor="White" HorizontalTextAlignment="Start"  Text="{Binding News}"/>
+				   </StackLayout>
+				  </Grid>
+			 </ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+			  <ListView.GroupHeaderTemplate>
+				  <DataTemplate>
+					  <ViewCell>
+				<Grid BackgroundColor="Black" HorizontalOptions="FillAndExpand"  RowDefinitions="Auto,Auto">
+					<Label TextColor="White" HorizontalTextAlignment="Start" Grid.Row="1" Text="{Binding NewsDateTime}"/>
+                        </Grid>
+					  </ViewCell>
+				  </DataTemplate>
+		   </ListView.GroupHeaderTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>
